@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="form">
+        <form action="" method="post" id="productForm">
+
+            <label for="product">
+                name 
+            </label>
+            <input type="text" id="product" name="product">
+
+            <label for="price">
+                price 
+            </label>
+            <input type="text" id="price" name="price">
+
+              <label for="category">category</label>
+                <select name="category" id="category">
+                    <option value="">Choose a value</option>
+                    <option value="electronics">electronics</option>
+                    <option value="skincare">skincare</option>
+                    <option value="food">food</option>
+                </select>
+
+                <label for="submitBtn">
+                    <button type="submit">Submit</button>
+                </label>
+        </form>
+    </section>
+
+    <section class="displayData">
+        <section class="electronics"></section>
+        <section class="skincare"></section>
+        <section class="food"></section>
+    </section>
+</body>
+</html>
