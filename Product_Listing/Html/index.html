@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <section class="form">
-        <form action="" method="post" id="productForm">
+        <form id="productForm">
 
             <label for="product">
                 name 
@@ -28,15 +29,33 @@
                 </select>
 
                 <label for="submitBtn">
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submitBtn">Submit</button>
                 </label>
         </form>
     </section>
 
     <section class="displayData">
-        <section class="electronics"></section>
-        <section class="skincare"></section>
-        <section class="food"></section>
+
+        <section class="dataItems">
+            <div class="electronicss item">
+                Electronics Items 
+            </div>
+            <div class="display_electronics">this is electronics</div>
+        </section>
+
+        <section class="dataItems">
+            <div class="skincares item">
+                Skincare Items
+            </div>
+            <div class="display_skincare">this is skincare</div>
+        </section>
+
+        <section class="dataItems">
+            <div class="foods item">
+                Foods items     
+            </div>
+            <div class="display_food">this is Foods items</div>
+        </section>
     </section>
 </body>
 </html>

@@ -1,0 +1,46 @@
+.displayData{
+    display: flex;
+    gap: 30%;
+    margin-top: 4%;
+}
+#productForm{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 5px;
+    border: 2px solid #102a784a;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #102a7824;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    
+}
+
+#submitBtn{
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+label[for="submitBtn"]{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3px 0;
+}
+
+#category{
+    padding: 5px;
+}
+input{
+        outline: none;
+        padding: 3px;
+}
+.item{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-size: medium; */
+}

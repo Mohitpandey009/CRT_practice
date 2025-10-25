@@ -1,6 +1,9 @@
+const COLLECTION = "";
+const API_URL = "";
+
 const formSubmit = document.getElementById('productForm')
-formSubmit.addEventListener('submit',(e)=>{
-    e.preventDefault()
+formSubmit.addEventListener('submit',function(e){
+    // e.preventDefault();
     submitData()
     e.target.reset()
 })
@@ -11,18 +14,28 @@ function submitData(){
     const category = document.getElementById('category').value
 
     const obj = {
-        product,price,category
+        _id:"1",product,price,category
     }
+    console.log(obj);
+    
 
-    axios.post(`${URL}/${collection}`,obj)
-    .then((res)=>{
-        displayData(res.data)
-    })
-    .catch((error)=>console.log(error))
+    // axios.post(`${API_URL}/${COLLECTION}`,obj)
+    // .then((res)=>{
+    //     displayData(res.data)
+    // })
+    // .catch((error)=>console.log(error))
+    displayData(obj);
 }
 
 function displayData(obj){
     // const parent = document.getElementById()
+    console.log(obj);
+    
+    const displayData = document.querySelector(`display_${obj.category}`)
+    const div = document.createElement('div')
+    div.id = obj._id;
+    div.textContent = `${obj.product} ${obj.price} ${obj.category}`
+    displayData.appendChild(div)
 }
 
 function deleteData(id){
